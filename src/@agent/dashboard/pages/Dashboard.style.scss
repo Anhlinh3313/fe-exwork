@@ -1,0 +1,68 @@
+.card-custom {
+    overflow: hidden;
+
+    &::before {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 3px;
+        top: 0;
+        left: 0;
+    }
+
+
+    &-1 {
+        &::before {
+            background-color: hsl(180, 62%, 55%);
+        }
+
+        i {
+
+            font-size: 25px;
+            color: hsl(180, 62%, 55%);
+        }
+    }
+
+    &-2 {
+        &::before {
+            background-color: hsl(34, 97%, 64%);
+        }
+
+        i {
+
+            font-size: 25px;
+            color: hsl(34, 97%, 64%);
+        }
+    }
+
+    &-3 {
+        &::before {
+            background-color: hsl(212, 86%, 64%);
+        }
+
+        i {
+
+            font-size: 25px;
+            color: hsl(212, 86%, 64%);
+        }
+    }
+}
+
+.condition-level-up {
+    background: rgb(247, 252, 255);
+    padding: 15px 10px;
+    border-radius: 8px;
+}
+
+.separator.separator-dashed {
+    border-bottom-style: dashed;
+    border-bottom-color: #E4E6EF;
+
+
+}
+
+.separator {
+    display: block;
+    height: 0;
+    border-bottom: 1px solid #EFF2F5;
+}

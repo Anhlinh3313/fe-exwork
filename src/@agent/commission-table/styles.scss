@@ -1,0 +1,20 @@
+#salary-slip {
+  background-color: #ffffff !important; /* Đặt nền trắng cho bảng */
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  table {
+    th {
+      text-align: center;
+      background-color: #f2f2f2 !important;
+      border: 1px solid #000000 !important;
+      font-size: 20px !important;
+      padding: 1rem !important;
+    }
+    td {
+      background-color: #ffffff !important; /* Đặt nền trắng cho bảng */
+      border: 1px solid #000000 !important;
+      font-size: 20px !important;
+      padding: 1rem !important;
+    }
+  }
+}

@@ -1,0 +1,54 @@
+.rmdp-container {
+  width: 100%;
+}
+.rmdp-week-day {
+  color: #4a50ff;
+}
+.rmdp-day,
+.rmdp-week-day {
+  width: 40px;
+  height: 40px;
+}
+.rmdp-day.rmdp-selected span:not(.highlight) {
+  background-color: #4a50ff;
+  box-shadow: 0 0 3px #fdece5;
+}
+.rmdp-day:not(.rmdp-disabled):not(.rmdp-day-hidden) span:hover {
+  background-color: #fdece5;
+}
+.rmdp-arrow {
+  border-color: #4a50ff;
+}
+.rmdp-arrow-container {
+  padding-top: 2px;
+}
+.rmdp-arrow-container:hover {
+  background-color: #4a50ff;
+  box-shadow: 0 0 3px #fdece5;
+}
+.rmdp-day:not(.rmdp-disabled):not(.rmdp-day-hidden) span:hover {
+  color: #000;
+}
+.rmdp-day.rmdp-today span {
+  background-color: #fdece5;
+}
+.rmdp-range {
+  background-color: #4a50ff;
+  box-shadow: 0 0 3px #fdece5;
+  color: #fff;
+}
+.rmdp-panel-body li,
+.rmdp-panel-body li.bg-blue {
+  background: rgba(230, 100, 31, 0.12) !important;
+  color: #4a50ff !important;
+  box-shadow: 0 0 2px #fdece5 !important;
+}
+.rmdp-shadow {
+  box-shadow: 0 0 5px #fdece5 !important;
+}
+.rmdp-ep-shadow:after {
+  box-shadow: 0 0 6px #fdece5 !important;
+}
+.rmdp-time-picker div input {
+  width: 30px;
+}

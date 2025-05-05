@@ -1,0 +1,99 @@
+.tbl-container {
+  width: 100%;
+  .tbl-fixed {
+    // overflow-x: scroll;
+    // overflow-y: scroll;
+    overflow-y: auto;
+    max-height: 88vh;
+    .table-hover > tbody > tr:hover.selected {
+      color: #fff !important;
+      background-color: #7a80ff !important;
+      --bs-table-accent-bg: #7a80ff !important;
+    }
+    table {
+      min-width: 100%;
+
+      tr.selected,
+      tr.selected th,
+      tr.selected td,
+      tr.selected .second,
+      tr.selected .third,
+      tr.selected .action {
+        box-shadow: rgb(136, 152, 239) 0px 5px 15px !important;
+        background-color: #7a80ff !important;
+        color: #fff !important;
+      }
+
+      thead th {
+        position: sticky;
+        top: 0px;
+        z-index: 2;
+        background-color: #f3f2f7;
+      }
+
+      tbody th {
+        position: sticky;
+        left: 0px;
+        z-index: 2;
+        background-color: #f3f2f7;
+        max-width: 30px !important;
+      }
+
+      thead th:first-child {
+        position: sticky;
+        top: 0px;
+        left: 0px;
+        z-index: 3;
+        background-color: #f3f2f7;
+        text-align: left;
+        max-width: 30px !important;
+      }
+
+      .action {
+        position: sticky;
+        text-align: center;
+        right: 0px;
+        z-index: 4;
+        background-color: #f3f2f7;
+      }
+      td.action {
+        top: 0px;
+        z-index: 3;
+      }
+
+      .second {
+        position: sticky;
+        font-weight: bold;
+        left: 55px;
+        z-index: 4;
+        min-width: 260px;
+        overflow: hidden;
+        background-color: #f3f2f7;
+      }
+
+      th.second {
+        z-index: 5;
+        top: 0px;
+      }
+
+      .third {
+        position: sticky;
+        font-weight: bold;
+        left: 312px;
+        z-index: 6;
+        background-color: #f3f2f7;
+      }
+
+      th.third {
+        z-index: 7;
+        top: 0px;
+      }
+    }
+
+    .dropdown-menu[data-popper-placement]:not([data-popper-placement^='top-']) {
+      top: 0rem !important;
+      right: 1.7rem !important;
+      z-index: 10;
+    }
+  }
+}
